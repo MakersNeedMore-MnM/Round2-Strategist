@@ -48,6 +48,54 @@ npm run build
 npm start
 ```
 
+## Deployment
+
+### Render (Recommended)
+
+1. **Push your code to GitHub** (already done)
+
+2. **Create a Render account** at [render.com](https://render.com)
+
+3. **Create a new Web Service**:
+   - Connect your GitHub repository
+   - Select "BloodBridge AI" repository
+   - Render will automatically detect the `render.yaml` configuration
+
+4. **Configure Environment Variables**:
+   - `OPENAI_API_KEY`: Your OpenAI API key
+   - `NODE_ENV`: `production` (auto-set)
+   - `PORT`: `3000` (auto-set)
+
+5. **Deploy** - Render will automatically:
+   - Install dependencies
+   - Build the application
+   - Start the server
+   - Provide a HTTPS URL
+
+The `render.yaml` file in the repository handles the build and deployment configuration automatically.
+
+### Manual Deployment Steps
+
+If you prefer manual deployment:
+
+1. **Build the project**:
+   ```bash
+   npm install
+   npm run build
+   ```
+
+2. **Set environment variables**:
+   ```bash
+   export OPENAI_API_KEY="your_key_here"
+   export NODE_ENV="production"
+   export PORT="3000"
+   ```
+
+3. **Start the server**:
+   ```bash
+   npm start
+   ```
+
 ## API Endpoints
 
 - `GET /api/health` - Health check and system status

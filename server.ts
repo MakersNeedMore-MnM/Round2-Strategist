@@ -1,6 +1,10 @@
 import express from 'express';
 import path from 'path';
 import { createServer as createViteServer } from 'vite';
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
 import {
   INITIAL_CITYCARE_INVENTORY,
   INITIAL_DONATIONS_HISTORY,
@@ -31,7 +35,7 @@ let outreachCampaigns: Array<{
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
 
   app.use(express.json());
 
