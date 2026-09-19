@@ -1,0 +1,7 @@
+{
+  "name": "BloodBridge AI",
+  "description": "Intelligent blood availability and emergency donor-matching platform connecting hospitals with nearby eligible donors while predicting shortages before they become critical.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
