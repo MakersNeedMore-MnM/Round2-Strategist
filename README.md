@@ -67,7 +67,7 @@ npm start
    - `PORT`: `3000` (auto-set)
 
 5. **Deploy** - Render will automatically:
-   - Install dependencies
+   - Install dependencies with legacy peer deps
    - Build the application
    - Start the server
    - Provide a HTTPS URL
