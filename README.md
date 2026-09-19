@@ -32,7 +32,7 @@ An intelligent blood donation management system that connects donors, hospitals,
    ```bash
    cp .env.example .env.local
    ```
-   Configure your API keys in `.env.local`
+   Configure your OpenAI API key in `.env.local`
 
 3. Run the development server:
    ```bash
